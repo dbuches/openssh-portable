@@ -1,9 +1,9 @@
-version: 0.0.4.0.{build}
+version: 0.0.5.0.{build}
 image: Visual Studio 2015
 
 branches:
   only:
-    - lastestw_all_openssl
+    - latestw_all_openssl
 
 init:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
